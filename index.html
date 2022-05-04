@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTM - Batalha da Terra-Média</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <script src="js/scripts.js"></script>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="" class="navbar-brand nav-text">
+                    <img src="img/gandalf-icone.png" alt="Jogo BTM" id="logo"> Batalhas na Terra-Média v2022.1
+                </a>
+                <button class="navbar-toggler" Type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>                    
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav"></div>
+                        <a href="#" class="nav-iten nav-link nav-text">Home</a>
+                        <a href="Regras.html" class="nav-iten nav-link nav-text">Regras</a>
+                        <a href="criar-personagens.html" class="nav-iten nav-link nav-text">Criação de personagens</a>
+                        <a href="Sobre.html" class="nav-iten nav-link nav-text">Sobre</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container" id="main">  
+        <div class="container" id="home-text">
+            <div class="col-12">
+                <h2 id="sub-titulo">O jogo</h2>
+            </div>
+            <div class="col-md6" id="main-text">
+                <p>
+                É baseado nas batalhas na Terra-Média(BTM) que faz parte do mundo e nos personagens criados pelo linguista e escritor britânico J.R R. Tolkien nas suas obras O Senhor dos Anéis(dividido em 3 volumes), O Hobbit e Silmarillion, dentre outras. 
+                </p>
+                <p>
+                Tanto O Senhor dos Anéis como O Hobbit foram adaptados para cinema, tornando-se grandes sucessos de bilheteria. 
+                </p>
+                <p>
+                Cabe frisar que, ainda hoje, os direitos sobre a obra são detidos pela Tolkien Enterprises. Porém, a dinâmica do jogo é toda definida neste documento, conforme a seção regras.
+                </p>
+            </div>
+            <button type="button" id="b-trailer" class="btn btn-primary btn-sm rounded " onclick="toggle();">Whatch Trailer</button>
+        </div>
+        <div class="trailer" id="trailer">
+            <img src="img/x_close_icon.png" alt="close_icon" onclick="toggle();" class="close">
+            <iframe class="rounded" id="trailer-video" width="480" height="360" src="https://www.youtube.com/embed/V75dMMIW2B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="" id="footer">
+            <p>
+                <h3  class="footer-infos">Cursos de TI da Estácio de Brasília em 2022.1 (TIEB 2022.1)</h3>
+                <p  class="footer-infos">Todos os direitos reservados.</p>
+                <p  class="footer-infos">(Terra-Média, locais e personagens são direitos de <a href="https://www.middleearth.com/home.html">Tolkien Enterprises</a>)</p>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    color: white;
+    font-size: 25px;
+}
+
+/* letra */
+
+letra {
+    font-size: 50px;
+}
+
+letra, h2 {
+    font-family: 'VT323', monospace;
+    color: #703cc4;
+}
+
+/* tabela/textos */
+
+#tabela-nacaoxcasa {
+    font-size: 20px;
+}
+
+#main-regras {
+    min-height: 100vh;
+    margin-bottom: 30px;
+
+}
+
+#main-regras { 
+    margin-top: 110px;
+}
