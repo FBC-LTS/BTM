@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTM - Batalha da Terra-Média</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/criar-personagens-OLD.css">
+
+</head>
+<body>
+    <script src="JS/scripts.js"></script>
+    <header>
+        <div class="container nav" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="" class="navbar-brand nav-text">
+                    <img src="img/gandalf-icone.png" alt="Jogo BTM" id="logo"> Batalhas na Terra-Média v2022.1
+                </a>
+                <button class="navbar-toggler" Type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>                    
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav"></div>
+                        <a href="index.html" class="nav-iten nav-link nav-text">Home</a>
+                        <a href="Regras.html" class="nav-iten nav-link nav-text">Regras</a>
+                        <a href="criando-form.html" class="nav-iten nav-link nav-text">Criação de personagens</a>
+                        <a href="Sobre.html" class="nav-iten nav-link nav-text">Sobre</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="cont">
+        <form action="" class="forms" id="jogador1">
+            <div class="grid-container">
+                <div class="header-form">
+                    Personagem 01
+                </div>
+                <div class="nome-jogadores grid-items">
+                    <label for="nome1" class="nm">Nome do Personagem: 
+                    </label>
+                    <input type="text" name="jogador1" id="nome1" class="nm-input">
+                    
+                </div>
+                <div class="hbl-jogades grid-items">
+                    <h3><letra class="">H</letra>abilidades:</h3>
+                    <div class="hbl-item">
+                        <label for="forca" class="hbl-name">Força: </label>
+                        <input type="number" id="forca"
+                        class="hbl-input">
+                        <hr class="hbl-hr">
+                    </div>
+                    
+                    <div class="hbl-item">
+                        <label for="precisao" class="hbl-name">Precisão: </label>
+                        <input type="number" id="precisao"
+                        class="hbl-input">
+                        <hr class="hbl-hr">
+                    </div>
+                    <div class="hbl-item">
+                        <label for="velocidade" class="hbl-name">Velocidade:  </label>
+                        <input type="number" id="velocidade"
+                        class="hbl-input">
+                        <hr class="hbl-hr">
+                    </div>
+                    <div class="hbl-item">
+                        <label for="armadura" class="hbl-name">Armadura: </label>
+                        <input type="number" id="armadura"
+                        class="hbl-input">
+                        <hr class="hbl-hr">
+                    </div>
+                    <div class="hbl-item">
+                        <label for="recuperacao" class="hbl-name">Recuperação: </label>
+                        <input type="number" id="recuperacao"
+                        class="hbl-input">
+                        <hr class="hbl-hr">
+                    </div>
+                </div>
+                <div class="raca-jogadores grid-items">
+                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
+                    <div id="group1">
+                        <div class="raca-item">
+                            <input type="radio" id="anao" name="raca" class="raca-input">
+                            <label for="anao" class="raca-name">
+                                Anão
+                            </label>
+                        </div>
+                        <div class="raca-item">
+                            <input type="radio" id="hobbit" name="raca" class="raca-input">
+                            <label for="hobbit" class="raca-name">
+                                Hobbit
+                            </label>
+                        </div>
+                        <div class="raca-item">
+                            <input type="radio" id="cavaleiro" name="raca" class="raca-input">
+                            <label for="cavaleiro" class="raca-name">
+                                Cavaleiro de Rohan
+                            </label>
+                        </div>
+                        <div class="raca-item">
+                            <input type="radio" id="guerreiro" name="raca" class="raca-input">
+                            <label for="guerreiro" class="raca-name">
+                                Guerreiro de Gondor
+                            </label>
+                        </div>
+                    </div>
+                    <div id="group2">
+                        <div class="raca-item">
+                            <input type="radio" id="elfo-f" name="raca" class="raca-input">
+                            <label for="elfo-f" class="raca-name">
+                                Elfo da Floresta
+                            </label>
+                        </div>
+                        <div class="raca-item">
+                            <input type="radio" id="elfo-l" name="raca" class="raca-input">
+                            <label for="elfo-l" class="raca-name">
+                                Elfo de Lothlórien
+                            </label>
+                        </div>
+                        <div class="raca-item">
+                            <input type="radio" id="orc" name="raca" class="raca-input">
+                            <label for="orc" class="raca-name">
+                                Orc Snaga
+                            </label>
+                        </div>
+                        <div class="raca-item">
+                            <input type="radio" id="uruk" name="raca" class="raca-input">
+                            <label for="uruk" class="raca-name">
+                                Uruk-hai
+                            </label>
+                        </div>
+                    </div>
+                </div> 
+                <div class="btn-cont">
+                    <button type="submit" class="btn-submit  grid-items btnx">Criar personagem</button>
+                </div>
+            </div>
+        </form>
+        <div class="btn-adic-cont">
+            <button type="button" class="btn-adic btnx" id="new-player" onclick="addPlayer('2');">Adicionar Jogador</button>
+        </div>
+    </div>
+    <footer>
+        <div class="" id="footer">
+            <p>
+                <h3  class="footer-infos">Cursos de TI da Estácio de Brasília em 2022.1 (TIEB 2022.1)</h3>
+                <p  class="footer-infos">Todos os direitos reservados.</p>
+                <p  class="footer-infos">(Terra-Média, locais e personagens são direitos de <a href="https://www.middleearth.com/home.html">Tolkien Enterprises</a>)</p>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

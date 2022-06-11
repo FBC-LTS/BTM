@@ -13,7 +13,6 @@
 
 </head>
 <body>
-    <script src="JS/scripts.js"></script>
     <header>
         <div class="container nav" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -34,847 +33,99 @@
             </nav>
         </div>
     </header>
-    <div class="cont">
-        <form action="" class="forms" id="jogador1">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 01
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome1" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador1" id="nome1" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca" class="hbl-name">Força: </label>
-                        <input type="number" id="forca"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
+    <div class="main-container" id="main">
+        <div class="container-form" id="forms">
+            <form action="#" id="j1" class="jogadores visivel">
+                <div class="box-form">
+                    <div class="form-header">
+                        <h1 class="title">Jogador 1</h1>
                     </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
+                    <div class="box-name">
+                        <label for="nome" class="label-name">Nome do Personagem: 
+                        </label>
+                        <input type="text" name="Jogador1" id="nome" class="input-name" placeholder="Digite o nome do jogador.">
                     </div>
-                    <div class="hbl-item">
-                        <label for="velocidade" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao" name="raca" class="raca-input">
-                            <label for="anao" class="raca-name">
+                    <h3 class="subtitle">Nação: </h3>
+                    <div class="box-race">
+                        <div class="input-race">
+                            <input type="radio" id="anao" name="race">
+                            <label for="anao">
                                 Anão
                             </label>
                         </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit" name="raca" class="raca-input">
-                            <label for="hobbit" class="raca-name">
+                        <div class="input-race">
+                            <input type="radio" id="hobbit" name="race">
+                            <label for="hobbit">
                                 Hobbit
                             </label>
                         </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro" name="raca" class="raca-input">
-                            <label for="cavaleiro" class="raca-name">
+                        <div class="input-race">
+                            <input type="radio" id="cavaleiro" name="race">
+                            <label for="cavaleiro">
                                 Cavaleiro de Rohan
                             </label>
                         </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro" name="raca" class="raca-input">
-                            <label for="guerreiro" class="raca-name">
+                        <div class="input-race">
+                            <input type="radio" id="guerreiro" name="race">
+                            <label for="guerreiro">
                                 Guerreiro de Gondor
                             </label>
                         </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f" name="raca" class="raca-input">
-                            <label for="elfo-f" class="raca-name">
+                        <div class="input-race">
+                            <input type="radio" id="elfo-f" name="race">
+                            <label for="elfo-f">
                                 Elfo da Floresta
                             </label>
                         </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l" name="raca" class="raca-input">
-                            <label for="elfo-l" class="raca-name">
+                        <div class="input-race">
+                            <input type="radio" id="elfo-l" name="race">
+                            <label for="elfo-l">
                                 Elfo de Lothlórien
                             </label>
                         </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc" name="raca" class="raca-input">
-                            <label for="orc" class="raca-name">
-                                Orc Snaga
+                        <div class="input-race">
+                            <input type="radio" id="orc" name="race">
+                            <label for="orc">
+                                Orc
                             </label>
                         </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk" name="raca" class="raca-input">
-                            <label for="uruk" class="raca-name">
+                        <div class="input-race">
+                            <input type="radio" id="uruk" name="race">
+                            <label for="uruk">
                                 Uruk-hai
                             </label>
                         </div>
                     </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador2">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 02
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome2" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador2" id="nome2" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca2" class="hbl-name">Força: </label>
-                        <input type="number" id="forca2"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao2" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao2"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade2" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade2"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura2" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura2"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao2" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao2"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
+                    <h3 class="subtitle">Habilidades do personagem: </h3>
+                    <div class="box-habl">
+                        <div class="input-habl">
+                            <label for="forca">Força:</label>
+                            <input type="number" id="forca">
+                        </div>
+                        <div class="input-habl">
+                            <label for="precisao">Precisão:</label>
+                            <input type="number" id="precisao">
+                        </div>
+                        <div class="input-habl">
+                            <label for="velocidade">Velocidade:</label>
+                            <input type="number" id="velocidade">
+                        </div>
+                        <div class="input-habl">
+                            <label for="armadura">Armadura:</label>
+                            <input type="number" id="armadura">
+                        </div>
+                        <div class="input-habl">
+                            <label for="recuperacao">Recuperação:</label>
+                            <input type="number" id="recuperacao">
+                        </div>
                     </div>
                 </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao2" name="raca2" class="raca-input">
-                            <label for="anao2" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit2" name="raca2" class="raca-input">
-                            <label for="hobbit2" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro2" name="raca2" class="raca-input">
-                            <label for="cavaleiro2" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro2" name="raca2" class="raca-input">
-                            <label for="guerreiro2" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f2" name="raca2" class="raca-input">
-                            <label for="elfo-f2" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l2" name="raca2" class="raca-input">
-                            <label for="elfo-l2" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc2" name="raca2" class="raca-input">
-                            <label for="orc2" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk2" name="raca2" class="raca-input">
-                            <label for="uruk2" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador3">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 03
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome3" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador3" id="nome3" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca3" class="hbl-name">Força: </label>
-                        <input type="number" id="forca3"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao3" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao3"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade3" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade3"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura3" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura3"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao3" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao3"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao3" name="raca3" class="raca-input">
-                            <label for="anao3" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit3" name="raca3" class="raca-input">
-                            <label for="hobbit3" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro3" name="raca3" class="raca-input">
-                            <label for="cavaleiro3" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro3" name="raca3" class="raca-input">
-                            <label for="guerreiro3" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f3" name="raca3" class="raca-input">
-                            <label for="elfo-f3" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l3" name="raca3" class="raca-input">
-                            <label for="elfo-l3" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc3" name="raca3" class="raca-input">
-                            <label for="orc3" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk3" name="raca3" class="raca-input">
-                            <label for="uruk3" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador4">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 04
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome4" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador4" id="nome4" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca4" class="hbl-name">Força: </label>
-                        <input type="number" id="forca4"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao4" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao4"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade4" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade4"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura4" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura4"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao4" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao4"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao4" name="raca4" class="raca-input">
-                            <label for="anao4" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit4" name="raca4" class="raca-input">
-                            <label for="hobbit4" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro4" name="raca4" class="raca-input">
-                            <label for="cavaleiro4" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro4" name="raca4" class="raca-input">
-                            <label for="guerreiro4" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f4" name="raca4" class="raca-input">
-                            <label for="elfo-f4" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l4" name="raca4" class="raca-input">
-                            <label for="elfo-l4" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc4" name="raca4" class="raca-input">
-                            <label for="orc4" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk4" name="raca4" class="raca-input">
-                            <label for="uruk4" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador5">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 05
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome5" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador5" id="nome5" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca5" class="hbl-name">Força: </label>
-                        <input type="number" id="forca5"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao5" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao5"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade5" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade5"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura5" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura5"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao5" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao5"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao5" name="raca5" class="raca-input">
-                            <label for="anao5" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit5" name="raca5" class="raca-input">
-                            <label for="hobbit5" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro5" name="raca5" class="raca-input">
-                            <label for="cavaleiro5" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro5" name="raca5" class="raca-input">
-                            <label for="guerreiro5" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f5" name="raca5" class="raca-input">
-                            <label for="elfo-f5" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l5" name="raca5" class="raca-input">
-                            <label for="elfo-l5" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc5" name="raca5" class="raca-input">
-                            <label for="orc5" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk5" name="raca5" class="raca-input">
-                            <label for="uruk5" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador6">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 06
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome6" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador6" id="nome6" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca6" class="hbl-name">Força: </label>
-                        <input type="number" id="forca6"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao6" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao6"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade6" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade6"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura6" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura6"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao6" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao6"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao6" name="raca6" class="raca-input">
-                            <label for="anao6" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit6" name="raca6" class="raca-input">
-                            <label for="hobbit6" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro6" name="raca6" class="raca-input">
-                            <label for="cavaleiro6" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro6" name="raca6" class="raca-input">
-                            <label for="guerreiro6" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f6" name="raca6" class="raca-input">
-                            <label for="elfo-f6" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l6" name="raca6" class="raca-input">
-                            <label for="elfo-l6" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc6" name="raca6" class="raca-input">
-                            <label for="orc6" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk6" name="raca6" class="raca-input">
-                            <label for="uruk6" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador7">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 07
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome7" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador7" id="nome7" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca7" class="hbl-name">Força: </label>
-                        <input type="number" id="forca7"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao7" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao7"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade7" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade7"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura7" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura7"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao7" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao7"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao7" name="raca7" class="raca-input">
-                            <label for="anao7" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit7" name="raca7" class="raca-input">
-                            <label for="hobbit7" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro7" name="raca7" class="raca-input">
-                            <label for="cavaleiro7" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro7" name="raca7" class="raca-input">
-                            <label for="guerreiro7" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f7" name="raca7" class="raca-input">
-                            <label for="elfo-f7" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l7" name="raca7" class="raca-input">
-                            <label for="elfo-l7" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc7" name="raca7" class="raca-input">
-                            <label for="orc7" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk7" name="raca7" class="raca-input">
-                            <label for="uruk7" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
-        <form action="" class="forms" id="jogador8">
-            <div class="grid-container">
-                <div class="header-form">
-                    Personagem 08
-                </div>
-                <div class="nome-jogadores grid-items">
-                    <label for="nome8" class="nm">Nome do Personagem: 
-                    </label>
-                    <input type="text" name="jogador8" id="nome8" class="nm-input">
-                    
-                </div>
-                <div class="hbl-jogades grid-items">
-                    <h3><letra class="">H</letra>abilidades:</h3>
-                    <div class="hbl-item">
-                        <label for="forca8" class="hbl-name">Força: </label>
-                        <input type="number" id="forca8"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    
-                    <div class="hbl-item">
-                        <label for="precisao8" class="hbl-name">Precisão: </label>
-                        <input type="number" id="precisao8"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="velocidade8" class="hbl-name">Velocidade:  </label>
-                        <input type="number" id="velocidade8"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="armadura8" class="hbl-name">Armadura: </label>
-                        <input type="number" id="armadura8"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                    <div class="hbl-item">
-                        <label for="recuperacao8" class="hbl-name">Recuperação: </label>
-                        <input type="number" id="recuperacao8"
-                        class="hbl-input">
-                        <hr class="hbl-hr">
-                    </div>
-                </div>
-                <div class="raca-jogadores grid-items">
-                    <h3 class="race-tit"><letra>N</letra>ação:</h3>
-                    <div id="group1">
-                        <div class="raca-item">
-                            <input type="radio" id="anao8" name="raca8" class="raca-input">
-                            <label for="anao8" class="raca-name">
-                                Anão
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="hobbit8" name="raca8" class="raca-input">
-                            <label for="hobbit8" class="raca-name">
-                                Hobbit
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="cavaleiro8" name="raca8" class="raca-input">
-                            <label for="cavaleiro8" class="raca-name">
-                                Cavaleiro de Rohan
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="guerreiro8" name="raca8" class="raca-input">
-                            <label for="guerreiro8" class="raca-name">
-                                Guerreiro de Gondor
-                            </label>
-                        </div>
-                    </div>
-                    <div id="group2">
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-f8" name="raca8" class="raca-input">
-                            <label for="elfo-f8" class="raca-name">
-                                Elfo da Floresta
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="elfo-l8" name="raca8" class="raca-input">
-                            <label for="elfo-l8" class="raca-name">
-                                Elfo de Lothlórien
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="orc8" name="raca8" class="raca-input">
-                            <label for="orc8" class="raca-name">
-                                Orc Snaga
-                            </label>
-                        </div>
-                        <div class="raca-item">
-                            <input type="radio" id="uruk8" name="raca8" class="raca-input">
-                            <label for="uruk8" class="raca-name">
-                                Uruk-hai
-                            </label>
-                        </div>
-                    </div>
-                </div> 
-                <div class="btn-cont">
-                    <button type="submit" class="btn-submit  grid-items">Criar personagem</button>
-                </div>
-            </div>
-        </form>
+            </form> 
+        </div>
+        <div class="container-btns">
+            <button id="ante" class="btn btn-primary btn-sm rounded inv">Anterior</button>
+            <button id="prox" class="btn btn-primary btn-sm rounded visivel">Proximo</button>
+        </div>
     </div>
     <footer>
         <div class="" id="footer">
@@ -885,5 +136,6 @@
             </p>
         </div>
     </footer>
+    <script src="JS/buttons-forms.js"></script>
 </body>
 </html>

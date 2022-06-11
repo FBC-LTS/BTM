@@ -1,5 +1,5 @@
-function toggle(){
+function toggleTrailer(){
     var trailer= document.querySelector(".trailer");
-    trailer.classList.toggle("active");
+    trailer.classList.toggle('active')
 }
 
