@@ -52,53 +52,69 @@
                 <h2>Neste jogo, foram selecionadas as seguintes nações da Terra-Média:</h2>
                 <table class="table table-dark" id="tabela-nacaoxcasa">
                     <tr>
-                        <th  scope="col">nação</th>
-                        <th  scope="col">casa</th>
+                        <th scope="col">nação</th>
+                        <th scope="col">casa</th>
                     </tr>
                     <tr>
-                        <td>Orc</td>
+                        <td>
+                            <button class="btn-modal" id="orc">Orc</button>
+                            
+                        </td>
                         <td>Cirith Ungol</td>
                     </tr>
                     <tr>
-                        <td>Uruk-hai</td>
+                        <td>
+                            <button class="btn-modal" id="uruk">Uruk-hai</button>
+                        </td>
                         <td>Portão Negro</td>
                     </tr>
                     <tr>
-                        <td>Cavaleiro de Rohan</td>
+                        <td>
+                            <button class="btn-modal" id="cav">Cavaleiro de Rohan</button>
+                        </td>
                         <td>Abismo de Helm</td>
                     </tr>
                     <tr>
-                        <td>Guerreiro de Gondor</td>
+                        <td>
+                            <button class="btn-modal" id="gue">Guerreiro de Gondor</button>
+                        </td>
                         <td>Minas Tirith</td>
                     </tr>
                     <tr>
-                        <td>Hobbit</td>
+                        <td>
+                            <button class="btn-modal" id="hbb">Hobbit</button>
+                        </td>
                         <td>O Condado</td>
                     </tr>
                     <tr>
-                        <td>Elfo da Floresta</td>
+                        <td>
+                            <button class="btn-modal" id="elf">Elfo da Floresta</button>
+                        </td>
                         <td>Floresta das Trevas</td>
                     </tr>
                     <tr>
-                        <td>Elfo de Lothlórien</td>
+                        <td><button class="btn-modal" id="elf-l">Elfo de Lothlórien</button></td>
                         <td>Caras Galadhon</td>
                     </tr>
                     <tr>
-                        <td>Anão</td>
+                        <td><button class="btn-modal" id="anao">Anão</button></td>
                         <td>Colinas de Ferro</td>
                     </tr>
                 </table>
+                <div class="box-btn">
+                    <button class="btn btn-sm rounded" id="sm-btn">Testes modal</button>
+                </div>
                 <hr class="divisao">
                 <p><letra>A</letra>lém da nacionalidade e das 5 habilidades, o personagem possui seus pontos de energia e um nome para identificá-lo ao longo de suas interações no jogo. No início do  jogo, o  personagem  possui  100  pontos de energia  e  outros  100  pontos  de habilidades que  devem  ser  distribuídos entre as habilidades da forma  que o  jogador preferir.</p>
                 <hr class="divisao">
                 <p><letra>A</letra> batalha é realizada em um cenário fixo(uma das casas) no qual podem ser alocados até oito jogadores, sendo que só pode haver um personagem de cada nação. O cenário é fixo porque a batalha inteira ocorre neste único cenário escolhido. Dentre os cenários possíveis, o jogo pode definir qualquer uma das oito casas das nações. Não existem alianças e “amizades” entre os personagens, portanto eles se enfrentam em duelos de um contra o outro em cada rodada e o vencedor avança para a próxima rodada.</p>
             </div>
         </div>
-        <div class="box-infos inv">
-            <img src="/img/x_close_icon.png" alt="close_icon" class="close-ico">
+        <div class="box-infos inv" id="modal">
+            <img src="/img/x_close_icon.png" alt="close_icon" class="close-ico" id="x-close">
         </div>
     </div>   
-    <script src="js/regras.js"></script>
+    
     <footer>
         <div class="" id="footer">
             <p>
@@ -108,5 +124,7 @@
             </p>
         </div>
     </footer>
+    <script src="js/data.json"></script>
+    <script src="js/regras.js"></script>
 </body>
 </html>

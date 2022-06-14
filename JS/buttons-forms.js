@@ -7,12 +7,21 @@ const hablName = ["Força: ", "Precisão: ", "Velocidade:  ", "Armadura: ", "Rec
 
 const btnProx = document.getElementById("prox");
 const btnBack = document.getElementById("ante");
+const btnsubm = document.getElementsByClassName("subm");
 
 var jogadorAtual = 0;
 var jogadorProx = 0;
 
 btnProx.addEventListener("click", proximoJogador);
 btnBack.addEventListener("click", voltarJogador);
+
+function stopDefAction(evt) {
+    evt.preventDefault();
+}
+
+btnsubm.addEventListener('click', stopDefAction, false);
+
+
 
 function criarNovoForm(jogadorCriar){
 
@@ -117,6 +126,18 @@ function criarNovoForm(jogadorCriar){
         boxHabl.appendChild(inputHabl);
     }
     boxForm.appendChild(boxHabl);
+
+    var boxbtn = document.createElement("div");
+    var btntxt = document.createTextNode("Enviar");
+    var btnsm = document.createElement("button");
+    btnsm.setAttribute("type", "submit");
+    btnsm.classList.add("btn");
+    btnsm.classList.add("rounded");
+    btnsm.classList.add("subm");
+    boxbtn.classList.add("box-btn")
+    btnsm.appendChild(btntxt);
+    boxbtn.appendChild(btnsm);
+    boxForm.appendChild(boxbtn);
 
     // Pega a posiçao para inserir na tela
     var posiForm = document.getElementById("forms");

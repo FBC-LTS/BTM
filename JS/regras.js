@@ -1,5 +1,13 @@
 const jsData = [
     {
+        "id": 0, 
+        "nacao": "Nome da nação", 
+        "casa": "Casa da nação", 
+        "descricao": "TXT descritivo",  
+        "personagens-saga":  ["nome do personagem", "outro",  "..."], 
+        "imagem": "https://via.placeholder.com/150"
+    },
+    {
         "id": 1, 
         "nacao": "Hobbit", 
         "casa": "O condado", 
@@ -13,7 +21,7 @@ const jsData = [
         "casa": "Cirith Ungol", 
         "descricao": "Embora sejam estúpidos, são retratados como seres infelizes, que odeiam todos, incluindo a si mesmos e aos seus mestres, que servem por medo. São incapazes de fazer coisas belas como os Elfos, mas conseguem criar instrumentos para ferir e destruir.",  
         "personagens-saga":  ["Azog, o profanador",  "Bolg",  "Snaga-hai", "Lurtz"], 
-        "imagem": "https://static.wikia.nocookie.net/okup/images/6/62/Snaga.png/revision/latest/scale-to-width-down/220?cb=20170126023809&path-prefix=da"
+        "imagem": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/22292098/Prologue_Orc.jpg"
     },
     {
         "id": 3, 
@@ -21,7 +29,7 @@ const jsData = [
         "casa": "Portão Negro", 
         "descricao": "Mais altos, mais fortes e sem a aversão à luz do orc “normal”, os Uruk-hai surgiram durante a Guerra do Anel. Através de processos também desconhecidos, talvez através da hibridização com homens, os Uruk-hai foram criados para serem o pináculo do exército de Sauron.",  
         "personagens-saga":  ["Azog, o profanador",  "Bolg",  "Snaga-hai", "Lurtz"], 
-        "imagem": "https://static.wikia.nocookie.net/okup/images/6/62/Snaga.png/revision/latest/scale-to-width-down/220?cb=20170126023809&path-prefix=da"
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9P_6cWtUlz0_doGUGM3JF4sLG-LcNT0-OMw&usqp=CAU"
     },
     {
         "id": 4, 
@@ -37,7 +45,7 @@ const jsData = [
         "casa": "Minas Tirith", 
         "descricao": "Gondor foi fundada pelos irmãos Isildur e Anárion , filhos de Elendil , exilados do reino submerso de Númenor e, junto com Arnor , o reino criado por Elendil ao norte, serviu como uma fortaleza para os Homens do Oeste . Após um período inicial de crescimento, Gondor declinou gradualmente ao longo da Terceira Era, continuamente enfraquecido por seus confrontos com os aliados de Sauron . O poder de Gondor não é restaurado até a derrota final de Sauron e a coroação de Aragorn .",  
         "personagens-saga":  ["Eärnur",  "Boromir",  "Faramir"], 
-        "imagem": "https://static.wikia.nocookie.net/terramedia/images/4/43/Faramir.jpg/revision/latest/scale-to-width-down/250?cb=20200720154240"
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Boromir.png/200px-Boromir.png"
     },
     {
         "id": 6, 
@@ -63,4 +71,121 @@ const jsData = [
         "personagens-saga":  ["Balin",  "Dwalin",  "Bombur", "Durin"], 
         "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Dwarf_by_BrokenMachine86.jpg/200px-Dwarf_by_BrokenMachine86.jpg"
     }
-];
+    ]
+
+
+const btnsm = document.getElementById("sm-btn");
+const clsIco = document.getElementById("x-close");
+
+// cada item
+const orcBtn = document.getElementById("orc");
+const urukBtn = document.getElementById("uruk");
+const cavBtn = document.getElementById("cav");
+const gueBtn = document.getElementById("gue");
+const hbbBtn = document.getElementById("hbb");
+const elfBtn = document.getElementById("elf");
+const elfLBtn = document.getElementById("elf-l");
+const anaoBtn = document.getElementById("anao");
+
+// event
+btnsm.addEventListener('click', function(){modalOp(0)});
+hbbBtn.addEventListener('click', function(){modalOp(1)});
+orcBtn.addEventListener('click', function(){modalOp(2)});
+urukBtn.addEventListener('click', function(){modalOp(3)});
+cavBtn.addEventListener('click', function(){modalOp(4)});
+gueBtn.addEventListener('click', function(){modalOp(5)});
+elfBtn.addEventListener('click', function(){modalOp(6)});
+elfLBtn.addEventListener('click', function(){modalOp(7)});
+anaoBtn.addEventListener('click', function(){modalOp(8)});
+
+
+clsIco.addEventListener('click', modalCl);
+
+function criarModalDinamico(indice){
+    const raceInfos = jsData[indice];
+    
+    let infoBox = document.createElement("div");
+    infoBox.setAttribute('id', 'autobox');
+
+    // header box
+    let headerBox = document.createElement("div");
+    headerBox.classList.add("box-header");
+
+    let headerTit = document.createElement("h3");
+    headerTit.setAttribute("id", "info-title");
+
+    let headerSTit = document.createElement("h4");
+    headerSTit.setAttribute("id", "info-subtitle");
+
+    let contTitle = document.createTextNode(raceInfos.nacao);
+    headerTit.appendChild(contTitle);
+
+    let contSTitle = document.createTextNode(raceInfos.casa);
+    headerSTit.appendChild(contSTitle);
+
+    headerBox.appendChild(headerTit);
+    headerBox.appendChild(headerSTit);
+    infoBox.appendChild(headerBox);
+
+    // Text
+    
+    let txtbox = document.createElement("div");
+    let partxt = document.createElement("p");
+    let contxt = document.createTextNode(raceInfos.descricao);
+    txtbox.classList.add("box-text");
+    partxt.appendChild(contxt);
+    txtbox.appendChild(partxt);
+    // ol 
+    let olPers = document.createElement("ol");
+    let listPers = raceInfos["personagens-saga"]
+    
+    for(per in listPers){
+        let liPers = document.createElement("li");
+        let contLi = document.createTextNode(raceInfos["personagens-saga"][per]);
+        
+        liPers.appendChild(contLi);
+        olPers.appendChild(liPers);
+
+    }
+    txtbox.appendChild(olPers);
+    
+    infoBox.appendChild(txtbox);
+
+    // img
+    let aimgtag =document.createElement("a");
+    let img = document.createElement("img");
+    img.setAttribute("src", raceInfos.imagem);
+    aimgtag.classList.add("box-img")
+    aimgtag.appendChild(img);
+    
+    infoBox.appendChild(aimgtag);
+    let posiInfos = document.getElementById("modal");
+    posiInfos.appendChild(infoBox);
+}
+
+function modalCl(){
+    let elemento = document.getElementById("modal");
+    
+    elemento.classList.remove("visivel");
+    elemento.classList.add("inv");
+    console.log('vis->inv');
+
+    let eItem = document.getElementById("autobox");
+    elemento.removeChild(eItem);
+    
+    
+}
+
+
+function modalOp(id){
+
+    
+    let posiInfos = document.getElementById("modal");
+    posiInfos.classList.remove("inv");
+    posiInfos.classList.add("visivel");
+    console.log('inv->vis');
+
+    criarModalDinamico(id);
+    
+
+}

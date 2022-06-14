@@ -5,6 +5,15 @@ body{
     font-size: 25px;
 }
 
+.inv {
+    display: none;
+    visibility: hidden;
+}
+.visivel {
+    display: flex;
+    visibility: visible;
+}
+
 /* letra */
 
 letra {
@@ -32,23 +41,89 @@ letra, h2 {
     margin-top: 110px;
 }
 
+.back-modal {
+    background-color: #00000085;
+    color: #00000085;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
 .box-infos {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 70%;
+    transform: translate(-85%, -70%);
     z-index: 10000;
     background: aliceblue;
     width: 70%;
     height: 70%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 1%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+    color: black;
 }
+
 .close-ico{
     width: 30px;
     height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.btn{
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
     
+}
+
+.box-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.box-img img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+
+.btn-modal{
+    width: 300px;
+    color: #fff;
+    background-color: #33393f;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.185);
+}
+
+.box-header{
+    margin-left: 20px;
+    display: flex;
+}
+
+.box-header h3{
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 5px;
+} 
+.box-header h4{
+    margin-left: 20px;
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+.box-text{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
